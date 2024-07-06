@@ -46,10 +46,11 @@ body {
 
     .dropdown-content {
         min-width: auto; /* Allow content to adjust width */
+        border: #000;
     }
 
     .dropdown-content a {
-        font-size: 4px; /* Reduce font size for dropdown items */
+        font-size: 18px; /* Reduce font size for dropdown items */
     }
 
     #mainimg video {
