@@ -40,7 +40,7 @@ body {
     }
 
     .navbar a {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 10px; /* Adjust font size for smaller screens */
         padding: 8px 12px; /* Adjust padding for smaller buttons */
     }
 
