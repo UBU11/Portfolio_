@@ -78,9 +78,9 @@ body {
     #mainimg video {
         content: url("finmainvidph(1).mp4");
         width: 100%;
-        height: auto;
-        margin: 0 auto; /* Center the video horizontally */
+        height: 100%;
         display: block;
+        position:fixed;
     }
 }
 
