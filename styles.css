@@ -1,0 +1,658 @@
+body {
+    background-image: url('bgm.pnj.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+.navbar {
+    background-image: url("navbar(3).png");
+    background-size: cover; /* Ensure the background image covers the entire navbar */
+    background-repeat: no-repeat;
+    height: 140px; /* Adjust the height of the navbar */
+    width: 100%; /* Take full width of the container */
+    overflow: visible;
+    position: relative;
+    margin: 0 auto; /* Center the navbar horizontally */
+}
+
+@media (max-width: 1092px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+    .navbar {
+        background-image: url("navbarph(1).jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        overflow: visible;
+        position: relative;
+        margin: 0 auto; /* Center the navbar */
+        padding: 0; /* Remove any padding */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller buttons */
+    }
+
+    .dropdown-content {
+        min-width: auto; /* Allow content to adjust width */
+    }
+
+    .dropdown-content a {
+        font-size: 4px; /* Reduce font size for dropdown items */
+    }
+
+    #mainimg video {
+        content: url("finmainvidph(1).mp4");
+        width: 100%;
+        height: auto;
+        margin: 0 auto; /* Center the video horizontally */
+        display: block;
+    }
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 16px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: #000; /* Set a background color matching the video */
+}
+
+#mainimg video {
+    width: 100%;
+    height: auto;
+    background-color: #000; /* Set a background color matching the video */
+}
+
+@media (max-width: 600px) {
+    #mainimg video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #mainimg {
+        margin: 50px auto;
+        max-width: 80%;
+    }
+
+    #about {
+        font-size: 28px;
+    }
+
+    #about img {
+        margin: 30px auto;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #mainimg {
+        margin: 40px auto;
+        max-width: 90%;
+    }
+
+    #about {
+        font-size: 26px;
+    }
+
+    #about img {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #mainimg {
+        margin: 30px auto;
+        max-width: 100%;
+    }
+
+    #about {
+        font-size: 24px;
+    }
+
+    #about img {
+        margin: 10px auto;
+        max-width: 100%;
+    }
+}
+
+
+
+.container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+.horizontal-list {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    /* Use flexbox to align items horizontally */
+}
+
+.horizontal-list li {
+    margin: 0 15px;
+    /* Add some space between the items */
+}
+
+#cv1 h1 {
+    font-size: 60px;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.7);
+    animation: glow;
+    
+}
+
+@media screen and (max-width: 480px) {
+    #cv1 h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+#cv1 .horizontal-list li img {
+    transition: all 0.3s ease-in-out;
+}
+
+#cv1 .horizontal-list li img:hover {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.Aligh{
+    max-width: 1000px;
+
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.section p {
+    margin: 10px 0;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 5px;
+} 
+
+/* Basic Styles */
+#skills1 h1 {
+    text-align: center;
+    text-decoration: double;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 480px) {
+    #skills1 h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+#skills1 ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#skills1 div ol li {
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills1 div ol li img {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills1 div ol li:hover {
+    transform: translateY(-5px);
+   
+}
+
+
+/* Different Hover Effects for Each Class */
+#skills1 div ol li img#Graphic-Design:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x rgba(89, 109, 181, 0.5);
+    animation: glow-blue 1s infinite alternate;
+}
+
+#skills1 div ol li img#snapshots:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(89, 181, 126, 0.5);
+    animation: glow-green 1s infinite alternate;
+}
+
+#skills1 div ol li img#highlights:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(232, 232, 20, 0.5);
+    animation: glow-yellow 1s infinite alternate;
+}
+
+#skills1 div ol li img#animations:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(149, 89, 181, 0.5);
+    animation: glow-purple 1s infinite alternate;
+}
+
+
+
+#services{ 
+    
+    /*background-image: url("");*/
+    box-shadow: #000;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+#services h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#services .s-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#services .s-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#services .s-list .s-item h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#services .s-list .s-item ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#services .s-list .s-item li.service-item {
+    font-size: 20px;
+    width: 250px; /* Fixed width for each box */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: none;
+    border-radius: 10px;
+    flex-direction: column; /* Ensure vertical stacking */
+}
+
+#services .s-list .s-item .service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#services .s-list .s-item .service-content video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#services .s-list .s-item .service-content img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+#skills1 p{
+    text-align: center;
+}
+
+
+/* Keyframes for Different Colors */
+@keyframes glow-blue {
+    0% {
+        box-shadow: 0px  5px  rgba(89, 109, 181, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(89, 109, 181, 1);
+    }
+}
+
+@keyframes glow-green {
+    0% {
+        box-shadow: 0 0 5px rgba(39, 86, 58, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgb(45, 220, 115);
+    }
+}
+
+@keyframes glow-yellow {
+    0% {
+        box-shadow: 0 0 5px rgba(232, 232, 20, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(232, 232, 20, 1);
+    }
+}
+
+@keyframes glow-purple {
+    0% {
+        box-shadow: 0 0 5px rgba(149, 89, 181, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(149, 89, 181, 1);
+    }
+}
+
+#software {
+    padding: 20px;
+    background: none;
+}
+
+#software h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.software-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: -10px; /* Offset to counteract child margin */
+}
+
+.software-item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row */
+    width: calc(25% - 20px); /* Adjust the width as needed */
+    margin: 10px; /* Minimum 10px spacing */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.software-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.software-item h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.software-item strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .software-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .software-item {
+        flex: 1 1 100%; /* 1 item per row on very small screens */
+    }
+}
+
+.software-item#Lightroom strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9 em;
+}
+/* Specific glow colors for each item */
+#Alight{
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Red glow */
+}
+#Alight:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+
+#Capcut{
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Green glow */
+}
+#Capcut:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+#Lightroom {
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Blue glow */
+}
+#Lightroom:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+#AdobeP{
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Yellow glow */
+}
+#AdobeP:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+#AdobeE{
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Magenta glow */
+}
+#AdobeE:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+#AdobeXD {
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Cyan glow */
+}
+#AdobeXD:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+@media (min-width: 768px) {
+    .software-item {
+        flex: 1 1 calc(25% - 20px); /* 4 items per row */
+        margin: 10px;
+    }
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.footer img.logo2 {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    vertical-align: middle; /* Aligns the logo vertically with adjacent text */
+}
+
+.link-logos {
+    display: inline-block;
+    margin-left: 10px; /* Adjust spacing between logo and icons */
+    vertical-align: middle; /* Aligns icons vertically with adjacent text */
+}
+
+.link-logos i {
+    font-size: 24px;
+    margin: 0 30px; /* Adjust spacing between icons */
+    color: #fff; /* Set icon color */
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* Adjust spacing between icons and links */
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between links */
+}
+
+.links li a.linkstyle {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links li a.linkstyle:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer img.logo2 {
+        width: 70px;
+    }
+
+    .link-logos i {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+
+    .links li a.linkstyle {
+        font-size: 14px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 15px 10px;
+    }
+
+    .footer img.logo2 {
+        width: 60px;
+    }
+
+    .link-logos {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .link-logos i {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+
+    .links li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .links li a.linkstyle {
+        font-size: 12px;
+    }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 10px 5px;
+    }
+
+    .footer img.logo2 {
+        width: 50px;
+    }
+
+    .link-logos i {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    .links li a.linkstyle {
+        font-size: 10px;
+    }
+}
